@@ -1,0 +1,880 @@
+body {
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: rgb(0, 32, 65);
+
+    
+    
+}
+
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow:  0px 4px 10px 5px rgb(141,115,66);
+    background-color: rgb(0, 32, 65)
+    
+    
+}
+ 
+
+
+#endereco{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-right: auto;
+    
+    
+}
+
+
+
+#numero{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+
+}
+
+.iconeLoc{
+    display: flex;
+}
+
+.telefoneIcon{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+
+.indice{
+    background-color: rgb(0, 32, 65);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow:  0px 4px 10px 5px rgb(141,115,66);
+    
+}
+ 
+ #home{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+#clinica{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+#tratamentos{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+#contato{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+
+.container-imagem-fundo{
+    display: flex;
+    justify-content: center;
+}
+
+
+#imagemFundo{
+    position: absolute;
+    opacity: 0.2;
+    
+ }
+    
+ .conteudo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-top: 100px;
+
+ }
+
+ .carousel {
+    display: flex;
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  0 6px 8px rgb(141,115,66);
+    
+ }
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+ #textoEsq{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    
+}
+
+.container-diferenciais{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    
+}
+
+ .diferenciais{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    max-width: 470px;
+    font-size: 25px;
+        
+}
+
+.container-img-diferenciais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+ .image-container {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  0 6px 8px rgb(141,115,66);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-container:hover img {
+    filter: brightness(50%);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container2 {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  0 6px 8px rgb(141,115,66);
+}
+
+.image-container2 img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.image-container2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-container2:hover img {
+    filter: brightness(50%);
+}
+
+.image-container2:hover .overlay {
+    opacity: 1;
+}
+
+.image-container3 {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  0 6px 8px rgb(141,115,66);
+}
+
+.image-container3 img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.image-container3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-container3:hover img {
+    filter: brightness(50%);
+}
+
+.image-container3:hover .overlay {
+    opacity: 1;
+}
+
+.image-container4 {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  0 6px 8px rgb(141,115,66);
+}
+
+.image-container4 img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.image-container4 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-container4:hover img {
+    filter: brightness(50%);
+}
+
+.image-container4:hover .overlay {
+    opacity: 1;
+}
+
+.container-fundo{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    position: relative;
+    }
+
+ .footer{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+ }   
+
+ .whatsapp-float {
+    display: flex;
+    position: fixed; /* Fixa o botão na posição */
+     width: 60px; 
+     height: 60px;
+     bottom: 20px; /* Distância do botão em relação ao fundo da página */
+     right: 20px; /*Distância do botão em relação à lateral direita */
+     background-color: rgb(141,115,66); /*Cor de fundo do botão */
+     color: white; 
+     border-radius: 50%; /*Torna o botão circular */
+     text-align: center; 
+     font-size: 30px; 
+     box-shadow:  0 6px 8px rgb(141,115,66); /*Sombra do botão */
+     z-index: 1000; /*Garante que o botão fique acima de outros elementos */
+     
+ }  
+
+ .whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e; /* Cor ao passar o mouse */
+ }  
+
+
+.container-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.tituloClinica{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 20px;
+}
+
+.container-conteudo-clinica{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.missao{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 15px;
+
+}
+
+.valores{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 15px;
+}
+
+.objetivos{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 550px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 14px;
+}
+
+.container-fundo-clinica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 410px;
+    position: relative;
+    
+    }
+.container-titulo-tratamentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.tituloTratamentos{
+   
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 20px;
+}
+
+.container-conteudo-tratamentos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-around;
+    
+}
+.limpeza{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    overflow: hidden;
+    font-size: 17px;
+    
+}
+
+.clareamento{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.ortodontia{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    overflow: hidden;
+    font-size: 17px;
+
+}
+
+.implantes{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.protese{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.endodontia{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.periodontia{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.cirurgia{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.container-fundo-tratamentos{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    position: relative;
+    
+    }
+
+ .container-titulo-contato{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+ } 
+
+.tituloContato{
+
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 20px;
+
+}
+
+.container-conteudo-contato{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 100px;
+    gap: 50px;
+}
+
+.textoCont{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 20px;
+    text-align: center;
+    
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 20px;
+    position: relative;
+}
+
+.telefoneCont{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 20px;
+    position: relative;
+}
+.instagram{
+    background: linear-gradient(to right,rgb(141,115,66), #FFFACD); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px rgb(141,115,66);
+    font-size: 20px;
+    position: relative;
+}
+
+.mapa{
+    position: relative;
+    height: 400px;
+}
+
+.container-fundo-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (max-width:1200px){
+    
+    .cabecalho{
+        font-size: 70%;
+        border-radius: 20px;
+        box-shadow: 0 8px 8px rgb(141,115,66);
+
+    }
+    
+    .logo{
+        transform: scale(0.7);
+        box-shadow: 0 4px 8px rgb(0, 0, 0);;
+    }
+    .indice{
+        font-size: 70%;
+        box-shadow: 0 8px 8px rgb(141,115,66);;
+    }
+    .container-imagem-fundo{
+        display: none;
+    
+    }
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-diferenciais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-img-diferenciais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;       
+    }
+    .container-fundo{
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        font-size: 65%;
+    }
+
+    .container-titulo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+
+    }
+    
+    .container-conteudo-clinica{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .valores{
+        padding: 3%;
+    }
+    .objetivos{
+        padding: 5%;
+        font-size: 90%;
+    }
+
+    .container-fundo-clinica{
+        background-color: black;
+        font-size: 65%;
+    }
+
+    .container-titulo-tratamentos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+
+    }
+
+    .container-conteudo-tratamentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .container-fundo-tratamentos{
+        background-color: black;
+        font-size: 65%;
+    }
+
+    .container-titulo-contato{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .container-conteudo-contato{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px;
+    }
+    .mapa{
+        display: flex;
+        justify-content: center;
+        max-width: 320px;
+        max-height: 400px;
+    }
+    .container-fundo-contato{
+        display: flex;
+        position:relative;
+        background-color: black;
+        font-size: 65%;
+        
+        
+        
+    }
+    }
